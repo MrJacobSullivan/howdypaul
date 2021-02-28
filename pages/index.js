@@ -1,14 +1,23 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
-        <title>Howdy Paul</title>
+        <title>Create Next App</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <h1 className='text-blue-500'>Hello World</h1>
+      <div className={styles.imageContainer}>
+        <Image
+          className={styles.HomeImg}
+          src='/profile.jpg'
+          width={323}
+          height={414}
+        />
+      </div>
     </div>
   )
 }
