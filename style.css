@@ -17,6 +17,11 @@ img {
   pointer-events: none;
 }
 
+span {
+  color: rgba(0, 0, 0, 0);
+  transition: 0.2s;
+}
+
 a {
   position: absolute;
   bottom: 12px;
@@ -25,11 +30,15 @@ a {
   color: #60a5fa;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.4rem;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 a:hover {
   color: #2563eb;
+}
+
+a:hover span {
+  color: #f87171;
 }
 
 @media only screen and (min-width: 800px) {
