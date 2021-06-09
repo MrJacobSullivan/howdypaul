@@ -27,7 +27,7 @@ body {
     font-weight: bold;
     color: $font-normal;
     position: fixed;
-    padding-top: 2rem;
+    padding-top: 1.8rem;
     width: 100%;
     text-align: center;
     user-select: none;
@@ -83,7 +83,6 @@ img {
     }
 
     @media only screen and (min-width: $breakpoint) {
-      font-size: 0.8rem;
       bottom: 12px;
       right: 24px;
     }
