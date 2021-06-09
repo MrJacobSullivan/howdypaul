@@ -6,6 +6,7 @@ $font-red: #f87171;
 
 $breakpoint: 800px;
 
+// Base Styles
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
@@ -20,6 +21,7 @@ body {
   background-color: $background;
 }
 
+// Greeting banner
 #greeting {
   h1 {
     font-weight: bold;
@@ -41,6 +43,7 @@ body {
   }
 }
 
+// Main image
 img {
   width: 110%;
   position: fixed;
@@ -55,6 +58,7 @@ img {
   }
 }
 
+// Attribution to artist
 #attribution {
   a {
     position: absolute;
