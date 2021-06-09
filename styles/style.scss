@@ -33,6 +33,7 @@ body {
 
   span {
     color: $font-light;
+    cursor: url('./img/heart-32x32.png') 16 16, move;
 
     &:hover {
       color: $font-red;

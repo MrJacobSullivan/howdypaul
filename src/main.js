@@ -1,5 +1,9 @@
 import '../styles/style.scss'
 
-console.log('hello world')
-
 const jacob = document.getElementById('jacob')
+
+const late = document.getElementById('late')
+
+late.addEventListener('click', () => {
+  late.remove()
+})
