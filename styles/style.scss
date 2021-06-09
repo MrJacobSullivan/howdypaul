@@ -1,10 +1,43 @@
+// Constants
+$background: #dbeafe;
+$font-normal: #2563eb;
+$font-light: #60a5fa;
+$font-red: #f87171;
+
+$breakpoint: 800px;
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+}
+
 body,
 html {
   overflow: hidden;
 }
 
 body {
-  background-color: #dbeafe;
+  background-color: $background;
+}
+
+#greeting {
+  h1 {
+    font-weight: bold;
+    color: $font-normal;
+    position: fixed;
+    padding-top: 2rem;
+    width: 100%;
+    text-align: center;
+    user-select: none;
+  }
+
+  span {
+    color: $font-light;
+
+    &:hover {
+      color: $font-red;
+    }
+  }
 }
 
 img {
@@ -15,40 +48,39 @@ img {
   transform: translate(-50%, 2%);
   margin: 0 auto;
   pointer-events: none;
-}
 
-span {
-  color: rgba(0, 0, 0, 0);
-  transition: 0.2s;
-}
-
-a {
-  position: absolute;
-  bottom: 12px;
-  right: 24px;
-  text-decoration: none;
-  color: #60a5fa;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.4rem;
-  transition: 0.2s;
-}
-
-a:hover {
-  color: #2563eb;
-}
-
-a:hover span {
-  color: #f87171;
-}
-
-@media only screen and (min-width: 800px) {
-  img {
+  @media only screen and (min-width: $breakpoint) {
     width: 45%;
   }
+}
 
+#attribution {
   a {
-    font-size: 0.8rem;
+    position: absolute;
     bottom: 12px;
     right: 24px;
+    text-decoration: none;
+    color: $font-light;
+    font-size: 0.8rem;
+    transition: 0.2s;
+
+    &:hover {
+      color: $font-normal;
+    }
+
+    span {
+      color: rgba(0, 0, 0, 0);
+      transition: 0.2s;
+    }
+
+    &:hover span {
+      color: $font-red;
+    }
+
+    @media only screen and (min-width: $breakpoint) {
+      font-size: 0.8rem;
+      bottom: 12px;
+      right: 24px;
+    }
   }
 }
