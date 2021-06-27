@@ -2,8 +2,9 @@ import '../styles/style.scss'
 
 const jacob = document.getElementById('jacob')
 
-const late = document.getElementById('late')
+const disguise = document.getElementById('disguise')
 
-late.addEventListener('click', () => {
-  late.remove()
+disguise.addEventListener('click', () => {
+  disguise.remove()
+  jacob.src = '/img/HowdyPaulDisguise.gif'
 })
