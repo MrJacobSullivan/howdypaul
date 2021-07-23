@@ -21,24 +21,6 @@ body {
   background-color: $background;
 }
 
-// Greeting banner
-#greeting {
-  h1 {
-    font-weight: bold;
-    color: $font-normal;
-    position: fixed;
-    padding-top: 1.8rem;
-    width: 100%;
-    text-align: center;
-    user-select: none;
-    cursor: pointer;
-
-    &:hover {
-      color: $font-red;
-    }
-  }
-}
-
 // Main image
 img {
   width: 110%;
